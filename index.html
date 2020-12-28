@@ -15,9 +15,9 @@
     <meta name="author" content="">
     <meta name="keywords" content="">
 
-    <title>Item Name | Documentation by Author Name</title>
+    <title>Opacity CSS</title>
 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!--link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"-->
 
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/stroke.css">
@@ -31,7 +31,11 @@
 
     <!-- CUSTOM -->
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-
+    <style>
+        .dnone{
+            display: none!important;
+        }
+    </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -91,8 +95,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="big-title text-center">
-                            <h1>Your ThemeForest item Name</h1>
-                            <p class="lead">Your awesome theme / template documentation version 1.0</p>
+                            <h1>Opacity.css</h1>
+                            <p class="lead">Opacity CSS Framework version 1.0</p>
                         </div>
                         <!-- end title -->
                     </div>
@@ -111,13 +115,13 @@
                     <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
                         <ul class="nav">
                             <li><a href="#line1">Getting Started</a></li>
-                            <li><a href="#line2">How to Install WordPress</a></li>
-                            <li><a href="#line3">How to Install Theme</a></li>
-                            <li><a href="#line4">Necessary Plugins</a></li>
-                            <li><a href="#line5">Creating Blog Pages</a></li>
-                            <li><a href="#line6">Revolution Slider</a></li>
-                            <li><a href="#line7">How to Use Option Panel</a>
-                                <ul class="nav">
+                            <li><a href="#line2">How to Install</a></li>
+                            <li><a href="#line3">Grid System</a></li>
+                            <li><a href="#line4">Typography</a></li>
+                            <li><a href="#line5">Flex Box</a></li>
+                            <li><a href="#line6">AlignMents</a></li>
+                            <li><a href="#line7">Margin & Padding</a>
+                                <ul class="nav dnone">
                                     <li><a href="#line7_1">General Options</a></li>
                                     <li><a href="#line7_2">Style Options</a></li>
                                     <li><a href="#line7_3">Header Options</a></li>
@@ -127,8 +131,8 @@
                                     <li><a href="#line7_7">Import & Export</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#line8">Support Desk</a></li>
-                            <li><a href="#line9">Files & Sources</a></li>
+                            <li><a href="#line8">Opacity Html Reset</a></li>
+                            <li><a href="#line9">Color</a></li>
                             <li><a href="#line10">Version History (Changelog)</a></li>
                             <li><a href="#line11">Copyright and license</a></li>
                         </ul>
@@ -145,10 +149,10 @@
                                     <div class="col-md-12 full">
                                         <div class="intro1">
                                             <ul>
-                                                <li><strong>Item Name : </strong>Gather Responsive Event Template</li>
+                                                <li><strong>Item Name : </strong>Opacity.CSS</li>
                                                 <li><strong>Item Version : </strong> v 1.0</li>
-                                                <li><strong>Author  : </strong> <a href="http://themeforest.net/user/surjithctly" target="_blank">Surjith S M</a></li>
-                                                <li><strong>Support Forum : </strong> <a href="https://support.surjithctly.in/forums" target="_blank">https://support.surjithctly.in/forums</a></li>
+                                                <li><strong>Author  : </strong> <a href="" target="_blank">Surjith S M</a></li>
+                                                <li><strong>Support Forum : </strong> <a href="mailtome:alphacode41@gmail.com" target="_blank">https://support.surjithctly.in/forums</a></li>
                                                 <li><strong>License : </strong> <a href="#" target="_blank">Un License</a></li>
                                             </ul>
                                         </div>
@@ -198,30 +202,610 @@
                             <div class="col-md-12">
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
 
-                                <h4>Bootstrap Grid System</h4>
+                                <h4>Opacity.css</h4>
 
                                 <pre class="brush: html; highlight: [2,4]">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        YOUR CODES GOES HERE
-                                    </div>
-                                </div>
-                            </div></pre>
+                        /*==================controll=================*/
+                        :root{
+                        --text: #6c757d;
+                        --gap:2rem;
+                        --col:1;
+                        --colwidth:1fr;
+                        --p: 16px;
+                        }
+                        :root{
+                        --black:#000000;
+                        --white:#ffffff;
+                        --dark:#212121;
+                        --gray:#313131;
+                        --smoke:#9c9696;
+                        --shadow:#ada2a2ad;
+                        --crimson:#dc143c;
+                        --skyblue:#00bffffb;
+                        --deepblue: #4054B2;
+                        /*custom*/
+                        --o-primary: #6EC1E4;
+                        --o-secondary: #54595F;
+                        --o-accent: #61CE70;
+                        --o-violet: #8040FF;
+                        --o-coral: #FF6276;
+                        --o-bluish: #313656;
+                        --o-cyan: #37C2CC;
+                        --o-darkblue: #031D3C;
+                        --o-sky: #4A63ED;
+                        --o-gray: #586982;
+                        --o-roboto: "Roboto";
+                        --o-h-font-weight: 600;
+                        --o-p-roboto: "Roboto Slab";
+                        --o-p-font-weight: 400;
+                        --ff: "Roboto";
+                        }
+                        /*color end;*/
+                        /*=================new==================*/
+                        .fixed-top{
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        }
+                        .h100{
+                        height: 100vh;
+                        }
+                        .center{
+                        display: grid;
+                        place-items: center;
+                        }
+                        .tt{
+                        text-transform: uppercase;
+                        }
+                        .tl{
+                        text-transform: lowercase;
+                        }
+                        .tc{
+                        text-transform: capitalize;
+                        }
+                        .dnone{
+                        display: none;
+                        }
+                        .m0{
+                        margin: -0.45rem!important;
+                        }
+                        .w80{
+                        width: 80%;
+                        }
+                        /*===============================reset===============================*/
+                        /*reset*/
+                        *,::after,::before{
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        }
+                        html{
+                        scroll-behavior: smooth;
+                        }
+                        body{
+                        font-family: sans-serif;
+                        overflow-x: hidden!important;
+                        line-height: 1.5;
+                        }
+                        li,ul{
+                        list-style-type: none;
+                        }
+                        a{
+                        text-decoration: none;
+                        color: inherit;
+                        }
+                        button{
+                        border: 0;
+                        outline: none;
+                        }
+                        h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+                        font-weight: 350;
+                        margin-top: 0;
+                        margin-bottom: 0.5rem;
+                        }
+                        p{
+                        color: var(--text);
+                        font-size: var(--p);
+                        }
+                        
+                        h1, .h1 {
+                        font-size: 2.47rem;
+                        }
+                        
+                        h2, .h2 {
+                        font-size: 2rem;
+                        }
+                        
+                        h3, .h3 {
+                        font-size: 1.8rem;
+                        }
+                        
+                        h4, .h4 {
+                        font-size: 1.5rem;
+                        }
+                        
+                        h5, .h5 {
+                        font-size: 1.25rem;
+                        }
+                        
+                        h6, .h6 {
+                        font-size: 1rem;
+                        }
+                        
+                        p, .p{
+                        font-weight: 300;
+                        }
+                        /*reset*/
+                        /*=======================end reset=================================*/
+                        /*===========================main==================================*/
+                        /*container*/
+                        .container{
+                        width: 100%;
+                        padding: 0 15px;
+                        margin: 0 auto;
+                        }
+                        
+                        @media (min-width: 576px) {
+                        .container {
+                        max-width: 540px;
+                        }
+                        }
+                        
+                        @media (min-width: 768px) {
+                        .container {
+                        max-width: 720px;
+                        }
+                        }
+                        
+                        @media (min-width: 990px) {
+                        .container {
+                        max-width: 960px;
+                        }
+                        }
+                        
+                        @media (min-width: 1200px) {
+                        .container {
+                        max-width: 1160px;
+                        }
+                        }
+                        
+                        /*end here*/
+                        
+                        /*img*/
+                        .img,.max{
+                        max-width: 100%;
+                        height: auto;
+                        vertical-align: middle;
+                        }
+                        /*position*/
+                        .p-r{
+                        position: relative;
+                        }
+                        .p-a{
+                        position: absolute;
+                        }
+                        .p-f{
+                        position: fixed;
+                        }
+                        .p-s{
+                        position: sticky;
+                        }
+                        /*z-index*/
+                        .z-top{
+                        z-index: 100;
+                        }
+                        .z-nav{
+                        z-index: 1000;
+                        }
+                        .z-back{
+                        z-index: -1;
+                        }
+                        .z-tooltip{
+                        z-index: 900;
+                        }
+                        /*end*/
+                        /*coloring*/
+                        .bg-dark{
+                        background: #000000;
+                        color: #f5f5f5;
+                        }
+                        .bg-light{
+                        background: #f5f5f5;
+                        color: #181818;
+                        }
+                        
+                        .o50{
+                        opacity: .7;
+                        }
+                        /*font*/
+                        .text-1 {
+                        font-size: 6rem;
+                        }
+                        
+                        .text-2 {
+                        font-size: 5.5rem;
+                        }
+                        
+                        .text-3 {
+                        font-size: 4.5rem;
+                        }
+                        
+                        .text-4 {
+                        font-size: 3.5rem;
+                        }
+                        .text-5{
+                        font-size: 2.5rem;
+                        }
+                        /*font weight*/
+                        .bold{
+                        font-weight: 700;
+                        }
+                        .semi-bold{
+                        font-weight: 500;
+                        }
+                        .normal{
+                        font-weight: 400;
+                        }
+                        .thin{
+                        font-weight: 200;
+                        }
+                        
+                        
+                        /*===width===*/
+                        .w25{
+                        width: 25%;
+                        }
+                        .w33{
+                        width: 33%;
+                        }
+                        .w50{
+                        width: 50%;
+                        }
+                        .w75{
+                        width: 75%;
+                        }
+                        .w100{
+                        width: 100%;
+                        }
+                        /*width end*/
+                        /*margin*/
+                        .auto{
+                        margin: auto;
+                        }
+                        .m-1{
+                        margin: 0.5rem;
+                        }
+                        .m-2{
+                        margin: 1rem;
+                        }
+                        .m-3{
+                        margin: 1.5rem;
+                        }
+                        .m-4{
+                        margin: 2rem;
+                        }
+                        .m-5{
+                        margin: 2.5rem;
+                        }
+                        .m-6{
+                        margin: 3rem;
+                        }
+                        /*====margin top & bottom====*/
+                        .my-1{
+                        margin: 0.5rem 0;
+                        }
+                        .my-2{
+                        margin: 1rem 0;
+                        }
+                        .my-3{
+                        margin: 1.5rem 0;
+                        }
+                        .my-4{
+                        margin: 2rem 0;
+                        }
+                        .my-5{
+                        margin: 2.5rem 0;
+                        }
+                        .my-6{
+                        margin: 3rem 0;
+                        }
+                        .my-7{
+                        margin: 4rem 0;
+                        }
+                        /*====padding====*/
+                        .p-1{
+                        padding: 0.5rem;
+                        }
+                        .p-2{
+                        padding: 1rem;
+                        }
+                        .p-3{
+                        padding: 1.5rem;
+                        }
+                        .p-4{
+                        padding: 2rem;
+                        }
+                        .p-5{
+                        padding: 2.5rem;
+                        }
+                        .p-6{
+                        padding: 3rem;
+                        }
+                        
+                        /*====padding top & bottom====*/
+                        .py-1{
+                        padding: 0.5rem 0;
+                        }
+                        .py-2{
+                        padding: 1rem 0;
+                        }
+                        .py-3{
+                        padding: 1.5rem 0;
+                        }
+                        .py-4{
+                        padding: 2rem 0;
+                        }
+                        .py-5{
+                        padding: 2.5rem 0;
+                        }
+                        .py-6{
+                        padding: 3rem 0;
+                        }
+                        .py-7{
+                        padding: 4rem 0;
+                        }
+                        /*======padding ends======*/
+                        
+                        /*=========================---end main---==========================-*/
+                        
+                        /*------------------------------------------------------grid-------------------------------------------------*/
+                        /*==============grid system===================*/
+                        .grid{
+                        display: grid;
+                        grid-template-columns: repeat(var(--col),var(--colwidth));
+                        }
+                        .grid-2{
+                        grid-template-columns: repeat(2,1fr);
+                        }
+                        .grid-3{
+                        grid-template-columns: repeat(3,1fr);
+                        }
+                        .grid-4{
+                        grid-template-columns: repeat(4,1fr);
+                        }
+                        .grid-5{
+                        grid-template-columns: repeat(5,1fr);
+                        }
+                        .grid,.grid-2,.grid-3,.grid-4,.grid-5{
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        gap: var(--gap);
+                        }
+                        /*media*/
+                        
+                        @media screen and (max-width:768px){
+                        .grid,.grid-2,.grid-3{
+                        grid-template-columns: 1fr;
+                        justify-content: center;
+                        align-items:center;
+                        }
+                        }
+                        
+                        @media screen and (max-width:768px){
+                        .grid-3,.grid-4,.grid-5{
+                        grid-template-columns: repeat(2,1fr);
+                        justify-content: center;
+                        align-items:center;
+                        }
+                        }
+                        
+                        @media screen and (max-width: 576px){
+                        .grid,.grid-2,.grid-3,.grid-4,.grid-5{
+                        grid-template-columns: 1fr;
+                        justify-content: center;
+                        align-items:center;
+                        }
+                        
+                        }
+                        
+                        /*grid system ends*/
+                        
+                        /*flex-box*/
+                        .dflex{
+                        display: flex;
+                        }
+                        .flex{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        }
+                        .flex-c{
+                        display: flex;
+                        flex-direction: column;
+                        }
+                        .wrap{
+                        flex-wrap: wrap;
+                        }
+                        
+                        /*==============order=============*/
+                        .order-1{
+                        order: -1;
+                        }
+                        .order-2{
+                        order: 2;
+                        }
+                        .order-3{
+                        order: 3;
+                        }
+                        .order-4{
+                        order: 4;
+                        }
+                        .order-5{
+                        order: 5;
+                        }
+                        .order-6{
+                        order: 6;
+                        }
+                        
+                        /*===============align================*/
+                        .aic{
+                        align-items: center;
+                        }
+                        .aifs{
+                        align-items: flex-start;
+                        }
+                        .aife{
+                        align-items: flex-end;
+                        }
+                        .ais{
+                        align-items: stretch!important;
+                        }
+                        .asfe{
+                        align-self: flex-end;
+                        }
+                        .asc{
+                        align-self: center;
+                        }
+                        .ass{
+                        align-self: stretch;
+                        }
+                        .asfs{
+                        align-self: flex-start;
+                        }
+                        /*align ends*/
+                        
+                        /*text alignment*/
+                        .tac{
+                        text-align: center;
+                        }
+                        .tar{
+                        text-align: right;
+                        }
+                        .taj{
+                        text-align: justify;
+                        }
+                        .tal{
+                        text-align: left;
+                        }
+                        /*end text align*/
+                        
+                        
+                        /*======justify======*/
+                        .jcc{
+                        justify-content: center;
+                        }
+                        .jcsb{
+                        justify-content: space-between;
+                        }
+                        .jcfe{
+                        justify-content: flex-end;
+                        }
+                        .jcfs{
+                        justify-content: flex-start;
+                        }
+                        .jsc{
+                        justify-self: center!important;
+                        }
+                        .jsfe{
+                        justify-self: flex-end;
+                        }
+                        
+                        /*end justify*/
+                        
+                        
+                        
+                        /*=====================End grid===========================-*/
+                        
+                        /*-----------------------------------------------------components------------------------------------------------*/
+                        /*end here*/
+                        /*card*/
+                        .card{
+                        border-radius: 2px;
+                        }
+                        /*btn*/
+                        .btn-b {
+                        display: inline-block;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        color: #212529;
+                        text-align: center;
+                        text-decoration: none;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        user-select: none;
+                        background-color: transparent;
+                        border: 1px solid transparent;
+                        padding: 0.75rem 1.75rem;
+                        font-size: 1rem;
+                        border-radius: 0.25rem;
+                        margin-top: 1rem;
+                        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow
+                        0.15s ease-in-out;
+                        }
+                        .btn-primary {
+                        color: #fff;
+                        background-color: #0d6efd;
+                        border-color: #0d6efd;
+                        }
+                        .btn-primary:hover {
+                        color: #fff;
+                        background-color: #0b5ed7;
+                        border-color: #0a58ca;
+                        }
+                        .btn-check:focus + .btn-primary, .btn-primary:focus {
+                        color: #fff;
+                        background-color: #0b5ed7;
+                        border-color: #0a58ca;
+                        box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+                        }
+                        .btn-secondary {
+                        color: #fff;
+                        background-color: #6c757d;
+                        border-color: #6c757d;
+                        }
+                        .btn-secondary:hover {
+                        color: #fff;
+                        background-color: #5c636a;
+                        border-color: #565e64;
+                        }
+                        .btn-check:focus + .btn-secondary, .btn-secondary:focus {
+                        color: #fff;
+                        background-color: #5c636a;
+                        border-color: #565e64;
+                        box-shadow: 0 0 0 0.25rem rgba(130, 138, 145, 0.5);
+                        }
+                        /*form*/
+                        .form-controll{
+                        width: 100%;
+                        display: block;
+                        padding: 1rem;
+                        background: rgb(226, 225, 225);
+                        outline: none;
+                        border: none;
+                        margin-bottom: .75rem;
+                        resize: vertical;
+                        }
+                        ::placeholder,textarea::placeholder{
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-size: .8rem!important;
+                        }
+                        /*---------------------------------------------------end components------------------------------------------------*/
+                        @media screen and (max-width: 576px){
+                        .flex{
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        text-align: center;
+                        }
+                        }                                </pre>
 
-                                <p>Our you can use the grid system with 2 columns like this;</p>
+                                <p>Opacity Grid System</p>
 
                                 <pre class="brush: html">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        YOUR CODES GOES HERE
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        YOUR CODES GOES HERE
-                                    </div>
-                                </div>
-                            </div>
                          </pre>
 
                                 <p>Our you can use the grid system with 3 columns like this;</p>
@@ -253,7 +837,7 @@
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install WordPress <hr></h2>
+                                <h2 class="dark-text">How to use<hr></h2>
                             </div>
                             <!-- end col -->
                         </div>
@@ -261,442 +845,769 @@
 
                         <div class="intro2 clearfix">
                             <p><i class="fa fa-wordpress"></i> Lorem the It is a long established fact that a reader will be distracted..
-                                <br> Please read more about WordPress here. <a href="#">WordPress Installation via FTP.</a> </p>
+                                <br> Please read more about WordPress here. <a href="#">Opacity Installation.</a> </p>
                         </div>
 
                         <hr>
 
-                        <h4>Upload via WordPress Admin</h4>
+                        <h4>Use via CDN</h4>
+                        <pre class="brush:html highlight: [2,4]">                           
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Opacity Document</title>
+                                <link rel="stylesheet" href="https://code-opacity.github.io/opacity/opacity.css">
+                            </head>
 
+                        </pre>
+                        <h1>Or</h1>
+                        <h2 class="display-2">Get Opacity</h2>
                         <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
 
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
+                        <a href="#" class="btn btn-primary">Download</a> <!--a href="#" class="btn btn-info">Ask a Question</a-->
                         <hr>
-                        <div class="row">
+                        <!--div class="row">
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="media">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/snFzbPm_RUE" frameborder="0" allowfullscreen></iframe>
                                 </div>
                             </div>
 
-                        </div>
+                        </div-->
 
                     </section>
-                    <!-- end section -->
+                    <!--end-->
+                    <section id="line">
+                        <h1 class="display-1">Most Recent</h1>
+                        <pre class="brush:html">
+                            /*=================new==================*/
+                            .fixed-top{
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            }
+                            .h100{
+                            height: 100vh;
+                            }
+                            .center{
+                            display: grid;
+                            place-items: center;
+                            }
+                            .tt{
+                            text-transform: uppercase;
+                            }
+                            .tl{
+                            text-transform: lowercase;
+                            }
+                            .tc{
+                            text-transform: capitalize;
+                            }
+                            .dnone{
+                            display: none;
+                            }
+                            .m0{
+                            margin: -0.45rem!important;
+                            }
+                            .w80{
+                            width: 80%;
+                            }
+                        </pre>
+                    </section>
+                <!--opacity css documention start here-->
+                    <section id="line">
+                        <h1 class="display-1">Container & Utilities</h1>
+                        <pre class="brush:html highlight[3,4]">
+                            /*===========================main==================================*/
+                            /*container*/
+                            .container{
+                            width: 100%;
+                            padding: 0 15px;
+                            margin: 0 auto;
+                            }
+                            
+                            @media (min-width: 576px) {
+                            .container {
+                            max-width: 540px;
+                            }
+                            }
+                            
+                            @media (min-width: 768px) {
+                            .container {
+                            max-width: 720px;
+                            }
+                            }
+                            
+                            @media (min-width: 990px) {
+                            .container {
+                            max-width: 960px;
+                            }
+                            }
+                            
+                            @media (min-width: 1200px) {
+                            .container {
+                            max-width: 1160px;
+                            }
+                            }
+                            
+                            /*end here*/
+                            
+                            /*img*/
+                            .img,.max{
+                            max-width: 100%;
+                            height: auto;
+                            vertical-align: middle;
+                            }
+                            /*position*/
+                            .p-r{
+                            position: relative;
+                            }
+                            .p-a{
+                            position: absolute;
+                            }
+                            .p-f{
+                            position: fixed;
+                            }
+                            .p-s{
+                            position: sticky;
+                            }
+                            /*z-index*/
+                            .z-top{
+                            z-index: 100;
+                            }
+                            .z-nav{
+                            z-index: 1000;
+                            }
+                            .z-back{
+                            z-index: -1;
+                            }
+                            .z-tooltip{
+                            z-index: 900;
+                            }
+                            /*end*/
+                            /*coloring*/
+                            .bg-dark{
+                            background: #000000;
+                            color: #f5f5f5;
+                            }
+                            .bg-light{
+                            background: #f5f5f5;
+                            color: #181818;
+                            }
+                            
+                            .o50{
+                            opacity: .7;
+                            }
+                    
+                                                                </pre>
+                    </section>
 
-                    <section id="line3" class="section">
 
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install Theme <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
+                    <section id="line3" >
+                                                        <h1 class="display-1">Grid System</h1>
+                                                        
+                                                        <pre class="brush: html highlight: [4,5,6]">
 
-                        <h4>Upload via WordPress Admin</h4>
+                                                                /*==============grid system===================*/
+                                :root{
+                                --text: #6c757d;
+                                --gap:2rem;
+                                --col:1;
+                                --colwidth:1fr;
+                                --p: 16px;
+                                }
+                                .grid{
+                                display: grid;
+                                grid-template-columns: repeat(var(--col),var(--colwidth));
+                                }
+                                .grid-2{
+                                grid-template-columns: repeat(2,1fr);
+                                }
+                                .grid-3{
+                                grid-template-columns: repeat(3,1fr);
+                                }
+                                .grid-4{
+                                grid-template-columns: repeat(4,1fr);
+                                }
+                                .grid-5{
+                                grid-template-columns: repeat(5,1fr);
+                                }
+                                .grid,.grid-2,.grid-3,.grid-4,.grid-5{
+                                display: grid;
+                                align-items: center;
+                                justify-content: center;
+                                gap: var(--gap);
+                                }
+                                /*media*/
+                                
+                                @media screen and (max-width:768px){
+                                .grid,.grid-2,.grid-3{
+                                grid-template-columns: 1fr;
+                                justify-content: center;
+                                align-items:center;
+                                }
+                                }
+                                
+                                @media screen and (max-width:768px){
+                                .grid-3,.grid-4,.grid-5{
+                                grid-template-columns: repeat(2,1fr);
+                                justify-content: center;
+                                align-items:center;
+                                }
+                                }
+                                
+                                @media screen and (max-width: 576px){
+                                .grid,.grid-2,.grid-3,.grid-4,.grid-5{
+                                grid-template-columns: 1fr;
+                                justify-content: center;
+                                align-items:center;
+                                }
+                                
+                                }
+                                
+                                /*grid system ends*/
+                                                                                 
+                                                                                 </pre>
 
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    </section>
+                    <!--End grid section-->
 
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
+                    <!--Typo-->
+                    <section id="line4">
+                        <h1 class="display-1">Typography</h1>
+                        <pre class="brush:html highlight[3,4]">
+                            .text-1 {
+                            font-size: 6rem;
+                            }
+                            
+                            .text-2 {
+                            font-size: 5.5rem;
+                            }
+                            
+                            .text-3 {
+                            font-size: 4.5rem;
+                            }
+                            
+                            .text-4 {
+                            font-size: 3.5rem;
+                            }
+                            .text-5{
+                            font-size: 2.5rem;
+                            }
+                            /*---------font weight--------*/
+                            .bold{
+                            font-weight: 700;
+                            }
+                            .semi-bold{
+                            font-weight: 500;
+                            }
+                            .normal{
+                            font-weight: 400;
+                            }
+                            .thin{
+                            font-weight: 200;
+                            }
+                            li,ul{
+                            list-style-type: none;
+                            }
+                            a{
+                            text-decoration: none;
+                            color: inherit;
+                            }
+                            button{
+                            border: 0;
+                            outline: none;
+                            }
+                            h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+                            font-weight: 350;
+                            margin-top: 0;
+                            margin-bottom: 0.5rem;
+                            }
+                            p{
+                            color: var(--text);
+                            font-size: var(--p);
+                            }
+                            
+                            h1, .h1 {
+                            font-size: 2.47rem;
+                            }
+                            
+                            h2, .h2 {
+                            font-size: 2rem;
+                            }
+                            
+                            h3, .h3 {
+                            font-size: 1.8rem;
+                            }
+                            
+                            h4, .h4 {
+                            font-size: 1.5rem;
+                            }
+                            
+                            h5, .h5 {
+                            font-size: 1.25rem;
+                            }
+                            
+                            h6, .h6 {
+                            font-size: 1rem;
+                            }
+                            
+                            p, .p{
+                            font-weight: 300;
+                            }
+                        </pre>
+                    </section>
+                    <!--end-->
 
-                        <hr>
+                    <!---->
+                    <section id="line5">
+                        <h1 class="display-1">Flex Box</h1>
+                        <pre class="brush:html highlight[3,4]">
+                        /*flex-box*/
+                        .dflex{
+                        display: flex;
+                        }
+                        .flex{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        }
+                        .flex-c{
+                        display: flex;
+                        flex-direction: column;
+                        }
+                        .wrap{
+                        flex-wrap: wrap;
+                        }
+                        
+                        /*==============order=============*/
+                        .order-1{
+                        order: -1;
+                        }
+                        .order-2{
+                        order: 2;
+                        }
+                        .order-3{
+                        order: 3;
+                        }
+                        .order-4{
+                        order: 4;
+                        }
+                        .order-5{
+                        order: 5;
+                        }
+                        .order-6{
+                        order: 6;
+                        }
 
-                        <h4>Upload via FTP Server</h4>
+                        @media screen and (max-width: 576px){
+                        .flex{
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        text-align: center;
+                        }
+                        }
+                        </pre>
+                    </section>
+                    <!--end-->
 
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <!---->
+                    <section id="line6">
+                        <h1 class="display-1">Alignment</h1>
+                        <pre class="brush:html highlight[3,4]">
+                            /*===============align================*/
+                            .aic{
+                            align-items: center;
+                            }
+                            .aifs{
+                            align-items: flex-start;
+                            }
+                            .aife{
+                            align-items: flex-end;
+                            }
+                            .ais{
+                            align-items: stretch!important;
+                            }
+                            .asfe{
+                            align-self: flex-end;
+                            }
+                            .asc{
+                            align-self: center;
+                            }
+                            .ass{
+                            align-self: stretch;
+                            }
+                            .asfs{
+                            align-self: flex-start;
+                            }
+                            /*align ends*/
+                            
+                            /*text alignment*/
+                            .tac{
+                            text-align: center;
+                            }
+                            .tar{
+                            text-align: right;
+                            }
+                            .taj{
+                            text-align: justify;
+                            }
+                            .tal{
+                            text-align: left;
+                            }
+                            /*end text align*/
+                            
+                            
+                            /*======justify======*/
+                            .jcc{
+                            justify-content: center;
+                            }
+                            .jcsb{
+                            justify-content: space-between;
+                            }
+                            .jcfe{
+                            justify-content: flex-end;
+                            }
+                            .jcfs{
+                            justify-content: flex-start;
+                            }
+                            .jsc{
+                            justify-self: center!important;
+                            }
+                            .jsfe{
+                            justify-self: flex-end;
+                            }
+                            
+                            /*end justify*/
 
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yQnQyI5WlKs" frameborder="0" allowfullscreen></iframe>
+
+                    
+                                            </pre>
+                    </section>
+                    <!--end-->
+
+                    <!---->
+                    <section id="line7">
+                        <h1 class="display-1">Margin & Padding</h1>
+                        <pre class="brush:html highlight[3,4]">
+                            /*margin*/
+                            .auto{
+                            margin: auto;
+                            }
+                            .m-1{
+                            margin: 0.5rem;
+                            }
+                            .m-2{
+                            margin: 1rem;
+                            }
+                            .m-3{
+                            margin: 1.5rem;
+                            }
+                            .m-4{
+                            margin: 2rem;
+                            }
+                            .m-5{
+                            margin: 2.5rem;
+                            }
+                            .m-6{
+                            margin: 3rem;
+                            }
+                            /*====margin top & bottom====*/
+                            .my-1{
+                            margin: 0.5rem 0;
+                            }
+                            .my-2{
+                            margin: 1rem 0;
+                            }
+                            .my-3{
+                            margin: 1.5rem 0;
+                            }
+                            .my-4{
+                            margin: 2rem 0;
+                            }
+                            .my-5{
+                            margin: 2.5rem 0;
+                            }
+                            .my-6{
+                            margin: 3rem 0;
+                            }
+                            .my-7{
+                            margin: 4rem 0;
+                            }
+                            /*====padding====*/
+                            .p-1{
+                            padding: 0.5rem;
+                            }
+                            .p-2{
+                            padding: 1rem;
+                            }
+                            .p-3{
+                            padding: 1.5rem;
+                            }
+                            .p-4{
+                            padding: 2rem;
+                            }
+                            .p-5{
+                            padding: 2.5rem;
+                            }
+                            .p-6{
+                            padding: 3rem;
+                            }
+                            
+                            /*====padding top & bottom====*/
+                            .py-1{
+                            padding: 0.5rem 0;
+                            }
+                            .py-2{
+                            padding: 1rem 0;
+                            }
+                            .py-3{
+                            padding: 1.5rem 0;
+                            }
+                            .py-4{
+                            padding: 2rem 0;
+                            }
+                            .py-5{
+                            padding: 2.5rem 0;
+                            }
+                            .py-6{
+                            padding: 3rem 0;
+                            }
+                            .py-7{
+                            padding: 4rem 0;
+                            }
+                            /*======padding ends======*/
+                    
+                                            </pre>
+                    </section>
+                    <!--end-->
+
+                    <!---->
+                    <section id="line ">
+                        <h1 class="display-1"> </h1>
+                        <pre class="brush:html highlight[3,4]">
+                    
+                    
+                                            </pre>
+                    </section>
+                    <!--end-->
+                    <section id="line8">
+                        <h2 class="display-1">Html Reset</h2>
+                        <pre class="brush:html">
+                        *,::after,::before{
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        }
+                        html{
+                        scroll-behavior: smooth;
+                        }
+                        body{
+                        font-family: sans-serif;
+                        overflow-x: hidden!important;
+                        line-height: 1.5;
+                        }
+                        li,ul{
+                        list-style-type: none;
+                        }
+                        a{
+                        text-decoration: none;
+                        color: inherit;
+                        }
+                        button{
+                        border: 0;
+                        outline: none;
+                        }
+                        h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+                        font-weight: 350;
+                        margin-top: 0;
+                        margin-bottom: 0.5rem;
+                        }
+                        p{
+                        color: var(--text);
+                        font-size: var(--p);
+                        }
+                        
+                        h1, .h1 {
+                        font-size: 2.47rem;
+                        }
+                        
+                        h2, .h2 {
+                        font-size: 2rem;
+                        }
+                        
+                        h3, .h3 {
+                        font-size: 1.8rem;
+                        }
+                        
+                        h4, .h4 {
+                        font-size: 1.5rem;
+                        }
+                        
+                        h5, .h5 {
+                        font-size: 1.25rem;
+                        }
+                        
+                        h6, .h6 {
+                        font-size: 1rem;
+                        }
+                        
+                        p, .p{
+                        font-weight: 300;
+                        }
+                        /*reset*/
+                        </pre>
+                    </section>
+
+                    <section id="line9">
+                        <h1 class="display1">Color</h1>
+                        <pre class="brush:html">
+                            :root{
+                            --black:#000000;
+                            --white:#ffffff;
+                            --dark:#212121;
+                            --gray:#313131;
+                            --smoke:#9c9696;
+                            --shadow:#ada2a2ad;
+                            --crimson:#dc143c;
+                            --skyblue:#00bffffb;
+                            --deepblue: #4054B2;
+                            /*custom*/
+                            --o-primary: #6EC1E4;
+                            --o-secondary: #54595F;
+                            --o-accent: #61CE70;
+                            --o-violet: #8040FF;
+                            --o-coral: #FF6276;
+                            --o-bluish: #313656;
+                            --o-cyan: #37C2CC;
+                            --o-darkblue: #031D3C;
+                            --o-sky: #4A63ED;
+                            --o-gray: #586982;
+                            --o-roboto: "Roboto";
+                            --o-h-font-weight: 600;
+                            --o-p-roboto: "Roboto Slab";
+                            --o-p-font-weight: 400;
+                            --ff: "Roboto";
+                            }
+                        </pre>
+                    </section>
+
+ <div class="dnone">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Please remember you have purchased a very affordable theme and you have not paid for a full-time web design
+                                        agency. Occasionally we will help with small tweaks, but these requests will be put on a lower priority due
+                                        to their nature. Support is also 100% optional and we provide it for your connivence, so please be patient,
+                                        polite and respectful.</p>
+                            
+                                    <p>Please visit our <a href="http://themeforest.net/user/yourusername"><strong>profile page</strong></a> or ask
+                                        question <a href="mailto:yourusername@gmail.com">@yourusername</a></p>
+                            
+                                    <strong>Support for my items includes:</strong>
+                                    <ul>
+                                        <li>* Responding to questions or problems regarding the item and its features</li>
+                                        <li>* Fixing bugs and reported issues</li>
+                                        <li>* Providing updates to ensure compatibility with new software versions</li>
+                                    </ul>
+                                    <strong>Item support does not include:</strong>
+                                    <ul>
+                                        <li>* Customization and installation services</li>
+                                        <li>* Support for third party software and plug-ins</li>
+                                    </ul>
+                            
                                 </div>
-
-                            </div>
-                            <div class="col-md-6">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/z0kEVwJB_go" frameborder="0" allowfullscreen></iframe>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line4" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Necessary Plugins <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/upload/plugin1.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #1</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-4">
-                                <img src="images/upload/plugin2.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #2</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-4">
-                                <img src="images/upload/plugin3.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #3</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-12">
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-
-                                <div class="text-center">
-                                    <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
+                            
+                                <div class="col-md-6">
+                                    <strong>Before seeking support, please...</strong>
+                                    <ul>
+                                        <li>* Make sure your question is a valid Theme Issue and not a customization request.</li>
+                                        <li>* Make sure you have read through the documentation and any related video guides before asking support
+                                            on how to accomplish a task.</li>
+                                        <li>* Make sure to double check the theme FAQs.</li>
+                                        <li>* Try disabling any active plugins to make sure there isn't a conflict with a plugin. And if there is
+                                            this way you can let us know.</li>
+                                        <li>* If you have customized your theme and now have an issue, back-track to make sure you didn't make a
+                                            mistake. If you have made changes and can't find the issue, please provide us with your changelog.</li>
+                                        <li>* Almost 80% of the time we find that the solution to people's issues can be solved with a simple
+                                            "Google Search". You might want to try that before seeking support. You might be able to fix the issue
+                                            yourself much quicker than we can respond to your request.</li>
+                                        <li>* Make sure to state the name of the theme you are having issues with when requesting support via
+                                            ThemeForest.</li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                        <!-- end row -->
+                            <!-- end row -->
+                            
+                            </section>
+                            <!-- end section -->
+                            
+                            <section id="line9" class="section">
+                            
+                                <div class="row">
+                                    <div class="col-md-12 left-align">
+                                        <h2 class="dark-text">Files & Sources
+                                            <hr>
+                                        </h2>
+                                    </div>
+                                    <!-- end col -->
+                                </div>
+                                <!-- end row -->
+                            
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <strong>Included Stylesheets</strong>
+                            
+                                        <p>These are the primary CSS files used for general front-end styling. Use these to customize your theme
+                                            even further. All included JavaScript codes under <strong>yourthemename/css/</strong></p>
+                            
+                                        <ul>
+                                            <li>1. style.css - Primary stylesheet</li>
+                                            <li>2. bootstrap.css - Bootstrap stylesheet</li>
+                                            <li>3. owl-carousel.css - OWL Carousel</li>
+                                            <li>4. fontawesome.css - FontAwesome Font Icons stylesheet</li>
+                                            <li>5. custom.css - Pathos Color Schemes stylesheet</li>
+                                            <li>6. prettyPhoto.css - Lightbox effect css file</li>
+                                            <li>7. flexslider.css - Flexslider css file</li>
+                                            <li>8. et-line.css - Elegant icons css file</li>
+                                            <li>9. carousel.css - OWL Carousel css file</li>
+                                            <li>10. animate.css - CSS3 animations css file</li>
+                                        </ul>
+                            
+                                    </div>
+                            
+                                    <div class="col-md-6">
+                                        <strong>Included JavaScript</strong>
+                            
+                                        <p>These are the various attribution inks to the Javascript files included or modified to work with in this
+                                            theme. All included JavaScript codes under <strong>yourthemename/js/</strong></p>
+                            
+                                        <ul>
+                                            <li>1. bootstrap.js - Bootstrap JavaScript</li>
+                                            <li>2. custom.js - All JavaScript Plugins</li>
+                                            <li>3. retina.js - Retina JavaScript</li>
+                                            <li>4. jquery.js - Base JavaScript</li>
+                                            <li>5. prettyPhoto.js - Lightbox JavaScript</li>
+                                            <li>6. owl-carousel.js - Lightbox JavaScript</li>
+                                            <li>7. revslider.js - Revolution Slider JavaScript</li>
+                                            <li>8. flexslider.js - Flexslider JavaScript</li>
+                                            <li>9. awesome-grid.nin.js - Awesome grid portfolio JavaScript</li>
+                                            <li>10. circle.js - Coming soon page JavaScript</li>
+                                            <li>11. contact.js - Contact form validate JavaScript</li>
+                                            <li>12. isotope.js - Masonry Portfolio JavaScript</li>
+                                            <li>13. progress.js - Progress bar JavaScript</li>
+                                            <li>14. rotate.js - Text rotate effect JavaScript</li>
+                                            <li>15. wow.js - CSS3 animation JavaScript</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                            
+                            </section>
+                            <!-- end section -->
 
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line5" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Creating Blog Pages <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                            </div>
-
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                                <h4 id="line5_1">WordPress Blog Page -</h4>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                                <h4 id="line5_2">Blog Post Sections -</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                                <h4 id="line5_3">Create Blog Gallery -</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line6" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install Revolution Slider <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                            </div>
-
-                            <div class="col-md-6">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                                <h4>Installation Slider</h4>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-6">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                                <h4>Updating Slider</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line7" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Use Option Panel <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_1">General Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_2">Style Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_3">Header Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_4">Font Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_5">Slider Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_6">Page Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_7">Import & Export Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line8" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Support Desk <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>Please remember you have purchased a very affordable theme and you have not paid for a full-time web design agency. Occasionally we will help with small tweaks, but these requests will be put on a lower priority due to their nature. Support is also 100% optional and we provide it for your connivence, so please be patient, polite and respectful.</p>
-
-                                <p>Please visit our <a href="http://themeforest.net/user/yourusername"><strong>profile page</strong></a> or ask question <a href="mailto:yourusername@gmail.com">@yourusername</a></p>
-
-                                <strong>Support for my items includes:</strong>
-                                <ul>
-                                    <li>* Responding to questions or problems regarding the item and its features</li>
-                                    <li>* Fixing bugs and reported issues</li>
-                                    <li>* Providing updates to ensure compatibility with new software versions</li>
-                                </ul>
-                                <strong>Item support does not include:</strong>
-                                <ul>
-                                    <li>* Customization and installation services</li>
-                                    <li>* Support for third party software and plug-ins</li>
-                                </ul>
-
-                            </div>
-
-                            <div class="col-md-6">
-                                <strong>Before seeking support, please...</strong>
-                                <ul>
-                                    <li>* Make sure your question is a valid Theme Issue and not a customization request.</li>
-                                    <li>* Make sure you have read through the documentation and any related video guides before asking support on how to accomplish a task.</li>
-                                    <li>* Make sure to double check the theme FAQs.</li>
-                                    <li>* Try disabling any active plugins to make sure there isn't a conflict with a plugin. And if there is this way you can let us know.</li>
-                                    <li>* If you have customized your theme and now have an issue, back-track to make sure you didn't make a mistake. If you have made changes and can't find the issue, please provide us with your changelog.</li>
-                                    <li>* Almost 80% of the time we find that the solution to people's issues can be solved with a simple "Google Search". You might want to try that before seeking support. You might be able to fix the issue yourself much quicker than we can respond to your request.</li>
-                                    <li>* Make sure to state the name of the theme you are having issues with when requesting support via ThemeForest.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line9" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Files & Sources <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <strong>Included Stylesheets</strong>
-
-                                <p>These are the primary CSS files used for general front-end styling. Use these to customize your theme even further. All included JavaScript codes under <strong>yourthemename/css/</strong></p>
-
-                                <ul>
-                                    <li>1. style.css - Primary stylesheet</li>
-                                    <li>2. bootstrap.css - Bootstrap stylesheet</li>
-                                    <li>3. owl-carousel.css - OWL Carousel</li>
-                                    <li>4. fontawesome.css - FontAwesome Font Icons stylesheet</li>
-                                    <li>5. custom.css - Pathos Color Schemes stylesheet</li>
-                                    <li>6. prettyPhoto.css - Lightbox effect css file</li>
-                                    <li>7. flexslider.css - Flexslider css file</li>
-                                    <li>8. et-line.css - Elegant icons css file</li>
-                                    <li>9. carousel.css - OWL Carousel css file</li>
-                                    <li>10. animate.css - CSS3 animations css file</li>
-                                </ul>
-
-                            </div>
-
-                            <div class="col-md-6">
-                                <strong>Included JavaScript</strong>
-
-                                <p>These are the various attribution inks to the Javascript files included or modified to work with in this theme. All included JavaScript codes under <strong>yourthemename/js/</strong></p>
-
-                                <ul>
-                                    <li>1. bootstrap.js - Bootstrap JavaScript</li>
-                                    <li>2. custom.js - All JavaScript Plugins</li>
-                                    <li>3. retina.js - Retina JavaScript</li>
-                                    <li>4. jquery.js - Base JavaScript</li>
-                                    <li>5. prettyPhoto.js - Lightbox JavaScript</li>
-                                    <li>6. owl-carousel.js - Lightbox JavaScript</li>
-                                    <li>7. revslider.js - Revolution Slider JavaScript</li>
-                                    <li>8. flexslider.js - Flexslider JavaScript</li>
-                                    <li>9. awesome-grid.nin.js - Awesome grid portfolio JavaScript</li>
-                                    <li>10. circle.js - Coming soon page JavaScript</li>
-                                    <li>11. contact.js - Contact form validate JavaScript</li>
-                                    <li>12. isotope.js - Masonry Portfolio JavaScript</li>
-                                    <li>13. progress.js - Progress bar JavaScript</li>
-                                    <li>14. rotate.js - Text rotate effect JavaScript</li>
-                                    <li>15. wow.js - CSS3 animation JavaScript</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
+ </div>
                     <section id="line10" class="section">
 
                         <div class="row">
@@ -720,47 +1631,20 @@
                                 <pre class="brush: html">
 
                                         -----------------------------------------------------------------------------------------
-                                        Version 3.8.4 - May 7th, 2015
+                                        Version 1.0.3 - 
                                         -----------------------------------------------------------------------------------------
 
-                                        - new revolution slider plugin version
-                                        - fixed security issue with xss vulnerability
-                                        - improved demo importer for certain server environments
-                                        - updated WooCommerce template files for the outdated message in system status
-                                        - added suhosin check in system status 
-                                        - added information that explains ZipArchive is required on your server for importing demos 
-                                        - portfolio Grid template improvement
-                                        - added more information to demo popup message for individual demo requirements
-                                        - RTL style improvements
-                                        - breadcrumb function improved for various areas
+                                        - 
 
                                         -----------------------------------------------------------------------------------------
-                                        Version 3.8.3 - May 7th, 2015
+                                        Version 1.0.2 - 
                                         -----------------------------------------------------------------------------------------
-                                        - fixed responsive / retina issue for larger logos
-                                        - fusion slider now uses responsive headings all the time
-                                        - dropped custom Avada styles for select boxes in IE since it is not supported
-                                        - fixed compatibility issue with Category Order and Taxonomy Terms Order plugin
-                                        - fixed issue of full width background being affected by padding options
-                                        - tested and fixed hellobar issue 
-                                        - typography settings now apply to single post pages
-                                        - improved smooth scroll in certain situations
-                                        - youtube & vimeo videos will show at normal size in light box as long as video embed link is not used
-                                        - fixed issue of â€œfixedâ€ featured image mode not working for carousels / recent work
-                                        - fixed issue of header tagline font not working with font options
+                                        - 
 
                                         -----------------------------------------------------------------------------------------
-                                        Version 3.8.2 - May 7th, 2015
-                                        -----------------------------------------------------------------------------------------
-                                        - fixed formatting issues with Turkish language files 
-                                        - letter spacing menu option improvement
-                                        - improved fusion slider max content width setting
-                                        - removed the â€œdisable first featured image on productsâ€ setting since it does not apply
-                                        - improved portfolio featured image loading
-                                        - removed encoding from tracking code, space before head, space before body, and custom CSS to stop it from parsing code within TO and removing special characters e.g. +
-                                        - woo login box now shows login fields for logged out users
-                                        - woo cart / my account links now show on mobile 
-                                        - fixed button styling issue with gravity forms
+                                        Version 1.0.0 - November 28th, 2020
+                                        -----------------------------------------------------------------------------------------                                         
+                                        - Initial releases
 
 
                                       </pre>
@@ -785,8 +1669,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 
-                                <p>Code released under the <a href="#" target="_blank">Un License</a> License.</p>                        
-                                <p>For more information about copyright and license check <a href="https://choosealicense.com/" target="_blank">choosealicense.com</a>.</p>
+                                <p>Code released under the <a href="#" target="_blank">Mit License</a> License.</p>                        
+                                <p>For more information about copyright and license check <a href="https://choosealicense.com/" target="_blank">code-opacity</a>.</p>
                             
                             </div>
                         </div>
